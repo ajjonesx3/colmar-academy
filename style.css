@@ -13,7 +13,8 @@ header {
 	background-color:white;
 	display:inline-flex;
 	align-items:center;
-	justify-content:space-between
+	justify-content:space-between;
+	border-bottom:1px solid #CCC;
 }
 
 #top-left {
@@ -80,6 +81,13 @@ nav li {
 	display:flex;
 }
 
+#s3 {
+	width:100%;
+	padding-top:64px;
+	background-color:#CCC;
+	text-align:center;
+}
+
 #s1 .img-container {
 	margin:0 0;
 	width:60%;
@@ -107,7 +115,7 @@ nav li {
 	margin-left:48px;
 }
 
-#banner-right h1, #s2 h1 {
+#banner-right h1, #s2 h1, #s3 h1, #s4 h1 {
 	font-size:54px;
 }
 
@@ -126,12 +134,13 @@ nav li {
 	padding:25px 140px;
 	margin:0 auto;
 	background-color:#444;
+	border:1px solid black;
+	border-radius:22px;
 	font-size:30px;
 	color:#CCC;
-	position:static;
+	position:relative;
 	margin-top:20px;
-	transition:all 350ms;
-
+	transition:all ease 1s;
 }
 
 #s2-left {
@@ -185,12 +194,12 @@ nav li {
 	left:6%;
 }
 
-.s2rc .info h2 {
+.s2rc .info h2{
 	font-size:32px;
 	color:#444;
 }
 
-.s2rc .info h4 {
+.s2rc .info h4{
 	font-size:16px;
 	color:#666;
 }
@@ -204,7 +213,7 @@ nav li {
 	transition:color 400ms;
 }
 
-.s2rc:hover {
+.s2rc:hover, #s4r .s4b:hover{
 	background-color:#ccc;
 }
 
@@ -215,3 +224,93 @@ a h4:hover {
 #start-here h3:hover {
 	background-color:#354a2a;
 }
+
+#s3cc {
+	display:flex;
+	margin:0 10%;
+	margin-top:32px;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding-bottom:32px;
+}
+
+.sb {
+	background-color:white;
+	flex-grow:1 1;
+	max-width:30%;
+	margin:8px;
+}
+
+.sb img {
+	width:100%;
+}
+
+.sb p {
+	margin-bottom:24px;
+	margin-left:16px;
+	margin-right:16px;
+}
+
+#s4 {
+	text-align:center;
+	margin-bottom:32px;
+}
+
+#s4l {
+	margin-left:24px;
+	margin-right:24px;
+	width:60%;
+	text-align:left;
+}
+
+#s4l video {
+	width:100%;
+	margin-top:0;
+}
+
+#s4c {
+	display:inline-flex;
+	align-items:start;
+}
+
+#s4r {
+	display:flex;
+	width:40%;
+	flex-flow:column;
+	justify-content:flex-start;
+	border-left:1px solid #BBB;
+}
+
+.s4b {
+	display:inline-flex;
+	align-items:center;
+	flex-wrap:nowrap;
+}
+
+.s4b img {
+	flex:1 1;
+	margin:16px;
+	max-width:35%;
+	height:auto;
+}
+
+.s4bi {
+	text-align:left;
+}
+
+.s4bi h2 {
+	font-size:22px;
+	color:#444;
+}
+
+footer {
+	border-top:1px solid #BBB;
+	display:flex;
+	justify-content:space-between;
+	align-items:baseline;
+	margin: 0 24px;
+	padding-bottom:24px;
+}
+
+
+
