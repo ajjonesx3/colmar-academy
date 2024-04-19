@@ -166,6 +166,7 @@ nav li {
 	display:inline-flex;
 	align-items:center;
 	transition:all 300ms;
+	flex-grow:1;
 }
 
 .s2rc .img-container {
