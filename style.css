@@ -79,16 +79,16 @@ nav li {
 	padding-bottom:4rem;
 	background-color:#CCC;
 	display:flex;
-	flex-wrap:wrap;
+	flex-wrap:nowrap;
 	align-items:center;
 }
 
 #s2 {
 	width:100%;
 	padding-top:4rem;
-	height:1000px;
 	background-color:white;
 	display:flex;
+	flex-wrap:nowrap;
 }
 
 #s3 {
@@ -101,12 +101,12 @@ nav li {
 #s1 .img-container {
 	margin:1rem 1.5rem;
 	min-width:100px;
+	max-width:60%;
 
 }
 
 #s2-left .img-container {
-	width:100%;
-	height:55%;
+	max-width:100%;
 }
 
 .img-container img {
@@ -118,16 +118,50 @@ nav li {
 #banner-right {
 	display:flex;
 	flex-direction:column;
+	flex-shrink:1;
 	max-width:30%;
 }
 
 @media only screen and (max-width:880px){
+	#s1, #s2, #s3cc,#s4,#s4c {
+		flex-direction:column;
+		flex-wrap:nowrap;
+		align-items:center;
+		text-align:center;
+	}
 	#banner-right {
 		text-align:center;
 		max-width:100%;
 	}		
 	#button-container{
 		margin:auto;
+	}
+	#s1 .img-container, #s2-left .img-container {
+		min-width:100%;
+	}
+	#s2-left, #s2-right, #s4l, #s4c {
+		min-width:100%;
+	}
+	#s3cc {
+		margin:0 .2rem !important;
+	}
+	#s3cc .sb {
+		min-width:100%;
+	}
+	#s4c #s4l {
+		text-align:center;
+	}
+	#s4r {
+		min-width:100%;
+	}
+	#s4r .s4b {
+		min-width:100%;
+	}
+	.s4b .s4bi {
+		display:flex;
+		flex-direction:column;
+		border:1px solid red;
+		justify-content:stretch;
 	}
 }
 
@@ -137,7 +171,7 @@ nav li {
 
 #banner-right h4 {
 	color:#444;
-	font-size:30px;
+	font-size:1.5rem;
 }
 
 #button-container {
@@ -150,8 +184,6 @@ nav li {
 
 #s2-left {
 	width:60%;
-	position:relative;
-	left:24px;
 }
 
 #s2-left h1 {
@@ -168,9 +200,7 @@ nav li {
 	flex-flow:column;
 	justify-content:space-between;
 	height:100%;
-	position:relative;
 	width:37%;
-	left:48px;
 	border-left:1px solid #BBB;
 }
 
@@ -187,8 +217,6 @@ nav li {
 	width:40%;
 	height:85%;
 	margin 0 0;
-	position:relative;
-	left:3%;
 }
 
 .s2rc .info {
@@ -233,17 +261,17 @@ a h4:hover {
 #s3cc {
 	display:flex;
 	margin:0 10%;
-	margin-top:32px;
+	margin-top:2rem;
 	flex-wrap:wrap;
 	justify-content:center;
-	padding-bottom:32px;
+	padding-bottom:2rem;
 }
 
 .sb {
 	background-color:white;
 	flex-grow:1 1;
 	max-width:30%;
-	margin:8px;
+	margin:.5rem;
 }
 
 .sb img {
@@ -251,19 +279,19 @@ a h4:hover {
 }
 
 .sb p {
-	margin-bottom:24px;
-	margin-left:16px;
-	margin-right:16px;
+	margin-bottom:1.5rem;
+	margin-left:1rem;
+	margin-right:1rem;
 }
 
 #s4 {
 	text-align:center;
-	margin-bottom:32px;
+	margin-bottom:2rem;
 }
 
 #s4l {
-	margin-left:24px;
-	margin-right:24px;
+	margin-left:1.5rem;
+	margin-right:1.5rem;
 	width:60%;
 	text-align:left;
 }
@@ -294,7 +322,7 @@ a h4:hover {
 
 .s4b img {
 	flex:1 1;
-	margin:16px;
+	margin:1rem;
 	max-width:35%;
 	height:auto;
 }
@@ -304,17 +332,18 @@ a h4:hover {
 }
 
 .s4bi h2 {
-	font-size:22px;
+	font-size:1.4rem;
 	color:#444;
 }
 
 footer {
 	border-top:1px solid #BBB;
+	width:100%;
 	display:flex;
 	justify-content:space-between;
 	align-items:baseline;
-	margin: 0 24px;
-	padding-bottom:24px;
+	margin: 0 1.5rem;
+	padding-bottom:1.5rem;
 }
 
 
