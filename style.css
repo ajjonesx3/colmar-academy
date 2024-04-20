@@ -122,7 +122,7 @@ nav li {
 	max-width:30%;
 }
 
-@media only screen and (max-width:880px){
+@media only screen and (max-width:1880px){
 	#s1, #s2, #s3cc,#s4,#s4c {
 		flex-direction:column;
 		flex-wrap:nowrap;
