@@ -265,11 +265,13 @@ a h4:hover {
 }
 
 #button-container {
-	transition:background-color 300ms;
+	transition:all 300ms;
 }
 
 #button-container:hover {
 	background-color:#354a2a;
+	cursor:pointer;
+	color:lightgrey;
 }
 
 #s3cc {
